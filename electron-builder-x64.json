@@ -1,0 +1,30 @@
+{
+  "appId": "cn.demo.www",
+  "productName": "demo app",
+  "copyright": "",
+  "directories": {
+    "output": "out-x64"
+  },
+  "win": {
+    "target": ["nsis"],
+    "executableName": "demo-desktop"
+  },
+  "nsis": {
+    "oneClick": false,
+    "language": "2052",
+    "perMachine": true,
+    "artifactName": "${name}-${arch}-${version}-setup.${ext}",
+    "allowToChangeInstallationDirectory": true
+  },
+  "electronLanguages": ["zh-CN"],
+  "files": [
+    "!.vscode",
+    "!pnpm-lock.yaml",
+    "!.npmrc",
+    "!README.md",
+    "!out-ia32",
+    "!electron-builder-ia32.json",
+    "!electron-builder-x64.json"
+  ],
+  "asar": true
+}

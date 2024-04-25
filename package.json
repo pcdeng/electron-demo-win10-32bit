@@ -1,0 +1,21 @@
+{
+  "name": "demo",
+  "version": "0.0.1",
+  "description": "demo app",
+  "author": "Payton <paytondeng@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "build32": "electron-builder --ia32 -c electron-builder-ia32.json",
+    "build64": "electron-builder --x64 -c electron-builder-x64.json",
+    "start": "electron --inspect=5858 ."
+  },
+  "devDependencies": {
+    "electron": "^21.4.4",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+    "electron-log": "^5.0.2"
+  }
+}
